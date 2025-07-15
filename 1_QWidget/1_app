@@ -1,0 +1,15 @@
+from PySide6.QtWidgets import QApplication, QWidget
+from rockwidget import RockWidget     # Assuming rockwidget.py is in the same directory
+import sys
+
+# Create the application instance
+app = QApplication(sys.argv)
+
+# Create an instance of RockWidget
+# window = QWidget()
+
+window = RockWidget()  # Use the RockWidget class from rockwidget.py
+
+
+window.show()
+app.exec()
